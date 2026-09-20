@@ -1,0 +1,74 @@
+/**********************************************
+VARIABLES
+**********************************************/
+
+:root {
+
+    /* Brand */
+    --primary: #8B4A3C;
+    --primary-dark: #6B2E22;
+    --primary-light: #F5EDE5;
+
+    --accent: #C4956A;
+    --accent-light: #F5E0D0;
+
+    /* Neutrals */
+    --cream: #FAF8F5;
+    --sand: #F0EBE3;
+    --white: #FFFFFF;
+
+    /* Text */
+    --dark: #1C1A2E;
+    --text: #2A2830;
+    --text-muted: #5C5868;
+    --warm-gray: #8A8178;
+
+    /* Feedback */
+    --success: #22C55E;
+
+    /* Borders */
+    --border: rgba(107, 63, 160, .12);
+
+    /* Typography */
+    --serif: "Cormorant Garamond", Georgia, serif;
+    --instrument: "Instrument Serif", Georgia, serif;
+    --sans: "Inter", system-ui, sans-serif;
+
+}
+
+/**********************************************
+RESET
+**********************************************/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**********************************************
+GLOBAL
+**********************************************/
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: var(--text);
+    background: var(--cream);
+
+    overflow-x: hidden;
+}
+
+::selection {
+    background: var(--primary);
+    color: var(--white);
+}
