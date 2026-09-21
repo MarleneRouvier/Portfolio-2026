@@ -1,0 +1,99 @@
+/**********************************************
+CONTACT
+**********************************************/
+
+.contact {
+    padding: 2rem 5vw 2.5rem;
+    background: #F3E6E0;
+}
+
+.contact-header {
+    max-width: 760px;
+    margin-bottom: 2.5rem;
+}
+
+.contact-title {
+    margin-top: .75rem;
+    font-family: var(--serif);
+    font-size: 1.85rem;
+    line-height: 1.1;
+    color: var(--dark);
+}
+
+.contact-description {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+    font-weight: 300;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-status {
+    display: inline-flex;
+    align-items: center;
+    gap: .75rem;
+    width: fit-content;
+    padding: .65rem 1.2rem;
+    border-radius: 999px;
+    background: #E8F5E9;
+    border: 1px solid #A5D6A7;
+    font-size: .82rem;
+    font-weight: 600;
+    color: #2E7D32;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22c55e;
+    animation: pulse 2s infinite;
+}
+
+.contact-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+}
+
+.contact-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: .55rem;
+    padding: .65rem 1rem;
+    border-radius: 999px;
+    background: white;
+    border: 1px solid rgba(139, 74, 60, .18);
+    text-decoration: none;
+    color: var(--dark);
+    font-size: .82rem;
+    font-weight: 500;
+    transition:
+        transform .25s,
+        box-shadow .25s,
+        border-color .25s;
+}
+
+.contact-chip svg {
+    color: var(--primary);
+}
+
+.contact-chip:hover {
+    transform: translateY(-2px);
+    border-color: rgba(139, 74, 60, .4);
+    box-shadow: 0 10px 24px rgba(139, 74, 60, .12);
+}
