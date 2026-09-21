@@ -1,6 +1,7 @@
 import { PROJECTS } from "./constants.js";
-
+console.log(PROJECTS);
 const projectsGrid = document.getElementById("projects-grid");
+console.log(projectsGrid.innerHTML);
 
 projectsGrid.innerHTML = PROJECTS.map(createProjectCard).join("");
 document

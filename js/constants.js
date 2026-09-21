@@ -1,5 +1,4 @@
 // Skills Strip List
-
 export const SKILLS_STRIP = [
   "Figma",
   "Angular",

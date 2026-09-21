@@ -1,0 +1,112 @@
+/**********************************
+ABOUT ME SECTION
+**********************************/
+
+.about-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    padding: 2rem 5vw;
+    background: var(--cream);
+}
+
+.about-intro {
+    margin: 1rem 0 1rem;
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.about-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.about-eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    background: var(--primary);
+    border-radius: 1px;
+}
+
+.about-title {
+    font-family: var(--serif);
+    margin-top: .75rem;
+    font-size: 1.85rem;
+    color: var(--dark);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.about-title em {
+    font-style: italic;
+    color: var(--primary);
+}
+
+.about-body p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.9;
+    font-weight: 300;
+    margin-bottom: 0.75rem;
+    text-align: justify;
+}
+
+.about-body p:last-child {
+    margin-bottom: 0;
+}
+
+.about-body p strong {
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.about-signature {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: var(--instrument);
+    font-style: normal;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: var(--primary);
+    margin-top: 1.25rem;
+}
+
+.about-signature span {
+    width: 20rem;
+    height: 1px;
+    background: rgba(139, 74, 60, .25);
+}
+
+.about-signature strong {
+    font-family: var(--serif);
+    font-size: 1.8rem;
+    color: var(--primary);
+    font-weight: 400;
+}
+
+.skills-col-divider {
+    border-left: none;
+    padding-left: 2.5rem;
+    position: relative;
+}
+
+.skills-col-divider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 430px;
+    background: rgba(139, 74, 60, 0.18);
+}

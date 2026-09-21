@@ -1,0 +1,90 @@
+/****************************************
+PROCESS SECTION
+****************************************/
+
+.process-card {
+    background: white;
+    border: 1px solid rgba(139, 74, 60, .08);
+    border-radius: 22px;
+    padding: 2rem;
+    min-height: 140px;
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, .04);
+}
+
+.process-intro {
+    margin-top: 1rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    font-weight: 300;
+    max-width: 560px;
+}
+
+.process-flow-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #F3ECE8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.process-tab {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(139, 74, 60, 0.3);
+    background: transparent;
+    color: var(--primary);
+    font-family: var(--sans);
+    font-size: 0.92rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        background-color .25s,
+        border-color .25s,
+        color .25s,
+        transform .25s;
+    flex-shrink: 0;
+}
+
+#processTabs {
+    display: flex;
+    gap: .75rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.process-tab:hover {
+    border-color: var(--primary);
+    background: rgba(139, 74, 60, 0.08);
+}
+
+.process-tab.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--white);
+}
+
+.process-step-panel {
+    align-items: flex-start;
+    gap: 1.25rem;
+    animation: processFadeIn 0.35s ease;
+}
+
+.process-flow-title {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 0.4rem;
+}
+
+.process-flow-desc {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    line-height: 1.55;
+    font-weight: 300;
+}

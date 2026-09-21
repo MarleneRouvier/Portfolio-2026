@@ -64,8 +64,6 @@ body {
 
     color: var(--text);
     background: var(--cream);
-
-    overflow-x: hidden;
 }
 
 ::selection {
