@@ -1,0 +1,82 @@
+/**********************************************
+SKILLS STRIP 
+**********************************************/
+
+.skills-strip-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-strip-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    width: 110%;
+    height: 26px;
+    background: #E8C5BB;
+    transform: translateY(-50%) rotate(-2.5deg);
+    opacity: 0.9;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.skills-strip {
+    background: var(--primary);
+    height: 44px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.skills-track {
+    display: inline-flex;
+    align-items: center;
+    width: max-content;
+    white-space: nowrap;
+    animation: ticker 30s linear infinite;
+}
+
+.skill-item {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.skill-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.85);
+    padding: 0 1.75rem;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+.skill-sep {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.skills-track:hover .skill-name {
+    color: #F5D9D0;
+}
+
+
+/**********************************************
+SKILLS STRIP MEDIA QUERIES
+**********************************************/
+
+@media (min-width: 1600px) {
+    .skills-strip-wrapper::before {
+        left: -10%;
+        width: 120%;
+        height: 38px;
+    }
+}
