@@ -1,0 +1,76 @@
+/******************************
+ARGENTO THUMBNAIL
+******************************/
+
+.thumb-argento {
+    background: #E8E3DC;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+    height: 255px;
+    padding: 0;
+}
+
+.argento-laptop {
+    position: relative;
+    width: 86%;
+    max-width: 370px;
+    margin-top: 34px;
+    margin-bottom: 14px;
+
+    transform-origin: bottom center;
+    transition:
+        transform .45s cubic-bezier(.2, .8, .2, 1),
+        filter .45s ease;
+}
+
+.argento-screen {
+    background: #1c1c1e;
+    border-radius: 8px 8px 0 0;
+    padding: 7px 7px 0;
+    box-shadow: 0 0 0 1px #3a3a3c;
+}
+
+.argento-display {
+    height: 170px;
+    overflow: hidden;
+    border-radius: 3px;
+    line-height: 0;
+}
+
+.argento-image {
+    width: 118%;
+    display: block;
+    object-fit: cover;
+    object-position: left top;
+    margin-left: -9%;
+}
+
+.argento-hinge {
+    position: relative;
+    height: 8px;
+    background: linear-gradient(180deg, #2d2d2d, #1c1c1e);
+    border-radius: 0 0 4px 4px;
+}
+
+.argento-notch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 4px;
+    background: #0d0d0d;
+    border-radius: 0 0 6px 6px;
+}
+
+.argento-shadow {
+    width: 108%;
+    height: 3px;
+    margin-left: -4%;
+    background: #1c1c1e;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
