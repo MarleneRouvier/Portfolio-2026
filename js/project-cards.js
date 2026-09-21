@@ -1,7 +1,5 @@
 import { PROJECTS } from "./constants.js";
-console.log(PROJECTS);
 const projectsGrid = document.getElementById("projects-grid");
-console.log(projectsGrid.innerHTML);
 
 projectsGrid.innerHTML = PROJECTS.map(createProjectCard).join("");
 document
@@ -44,8 +42,6 @@ function createProjectCard(project) {
 
 function createTags(tags) {
 
-     console.log("TAGS:", tags);
-
     return tags
         .map(tag => `<span class="tag">${tag}</span>`)
         .join("");
@@ -53,8 +49,6 @@ function createTags(tags) {
 }
 
 function createButtons(project) {
-
-    console.log("BUTTONS:", project.buttons);
 
     if (!project.buttons) {
 

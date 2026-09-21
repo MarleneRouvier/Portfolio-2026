@@ -1,0 +1,19 @@
+/**********************************************
+FOOTER
+**********************************************/
+
+.footer {
+    padding: 1rem;
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    font-size: .8rem;
+    color: rgba(255, 255, 255, .7);
+    text-align: center;
+    line-height: 1.6;
+    font-weight: 400;
+}
