@@ -1,0 +1,55 @@
+/**********************************************
+SCROLL TO TOP
+**********************************************/
+
+.scroll-top {
+  position: fixed;
+  bottom: 7.2rem;
+  right: 1rem;
+  width: 41px;
+  height: 41px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transform:
+    translateY(15px) scale(.9);
+  transition:
+    opacity .35s ease,
+    transform .35s ease,
+    visibility .35s ease;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.scroll-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform:
+    translateY(0) scale(1);
+}
+
+.scroll-top svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform .25s ease;
+}
+
+.scroll-top:hover {
+  transform:
+    translateY(-4px) scale(1.04);
+}
+
+.scroll-top:hover svg {
+  animation: arrowFloat .6s ease infinite alternate;
+}
+
+
