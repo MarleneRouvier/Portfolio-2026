@@ -44,9 +44,11 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/scroll-to-top.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/soft-skills.css">
 
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico">
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/iconify-icon/2.2.0/iconify-icon.min.js"></script>
 
     <!-- Author -->
     <meta name="author" content="Marlene Ivon Rouvier">
@@ -248,32 +250,6 @@
         </div>
 
     </section>
-
-
-    <!-- WORK SECTION -->
-    <section class="work" id="work">
-
-        <div class="section-header">
-
-            <div class="section-eyebrow">
-                Selected work
-            </div>
-
-            <h2 class="section-title">
-                Projects that solve real problems
-            </h2>
-
-            <p class="section-description">
-                Each case study explores the challenges, decisions, and outcomes behind the final solution.
-            </p>
-
-        </div>
-
-        <div class="projects-grid" id="projects-grid"></div>
-
-    </section>
-
-
 
     <!-- ABOUT ME SECTION -->
     <section class="about-strip" id="about">
@@ -497,6 +473,135 @@
             </div>
 
         </div>
+
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills-diagram-section" id="skills">
+
+        <div class="skills-header">
+
+            <span class="eyebrow">
+                Skills & Strengths
+            </span>
+
+            <h2 class="section-title">
+                How I work
+            </h2>
+
+            <p class="section-description">
+                I combine research, strategy and craft to create clear, human experiences that solve real problems.
+            </p>
+
+        </div>
+
+        <!-- Soft Skills Wrapper -->
+        <div class="skills-label">
+
+            <div class="eyebrow">Soft Skills</div>
+
+            <div class="skills-line"></div>
+
+        </div>
+
+        <!-- Soft Skills Grid -->
+        <div id="softSkillsGrid" class="soft-skills-grid"></div>
+
+        <!-- Hard Skills -->
+        <div class="skills-label fade-up">
+
+            <div class="eyebrow">
+                What I bring to the table
+            </div>
+
+            <div class="skills-line"></div>
+
+        </div>
+
+        <div class="skills-section">
+
+            <h2 class="section-title">
+                I design <em>experiences.</em> I build solutions.
+            </h2>
+
+            <p class="section-description">
+                From strategy to interface, from interface to implementation,
+                I connect the pieces to create thoughtful, user-centered digital
+                experiences.
+            </p>
+
+            <div class="skills-diagram">
+
+                <div class="skills-ring-wrap" id="skillsRing">
+
+                    <div class="skills-center">
+
+                        <div class="skills-center-name" id="skillCenterName">
+                            ME
+                        </div>
+
+                    </div>
+
+                    <svg id="skillsSvg" viewBox="-60 -60 460 460" aria-label="Skills diagram">
+                    </svg>
+
+                </div>
+
+            </div>
+
+            <div class="skills-desktop" id="skillDescBox">
+
+                <p id="skillDescDefault" class="skill-desc-default">
+
+                    <svg class="skill-hint-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+
+                        <path d="M9 11.5V6a1.5 1.5 0 0 1 3 0v5" />
+                        <path d="M12 11.5V5a1.5 1.5 0 0 1 3 0v6.5" />
+                        <path
+                            d="M15 11.5V7a1.5 1.5 0 0 1 3 0v7c0 4-2 6-2 6H9.5s-1-1-2-3l-1.7-3.4a1.5 1.5 0 0 1 .6-2 1.6 1.6 0 0 1 2 .4l.6.9" />
+                    </svg>
+
+                    <span class="skill-hint-desktop">
+                        Hover over a node to learn more.
+                    </span>
+
+                    <span class="skill-hint-mobile">
+                        Click a node to learn more.
+                    </span>
+
+                </p>
+
+                <p id="skillDescActive" class="skill-desc-active"></p>
+
+                <div id="skillToolsBox" class="skill-tools-box"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- WORK SECTION -->
+    <section class="work" id="work">
+
+        <div class="section-header">
+
+            <div class="section-eyebrow">
+                Selected work
+            </div>
+
+            <h2 class="section-title">
+                Projects that solve real problems
+            </h2>
+
+            <p class="section-description">
+                Each case study explores the challenges, decisions, and outcomes behind the final solution.
+            </p>
+
+        </div>
+
+        <div class="projects-grid" id="projects-grid"></div>
 
     </section>
 

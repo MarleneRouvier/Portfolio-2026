@@ -4,7 +4,7 @@ CONTACT
 
 .contact {
     padding: 2rem 5vw 2.5rem;
-    background: #F3E6E0;
+    background: var(--blush-background);
 }
 
 .contact-header {
