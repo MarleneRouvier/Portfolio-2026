@@ -1,0 +1,30 @@
+/* ==========================================================
+   Navigation
+========================================================== */
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 72px;
+}
+
+.navbar-label {
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.navbar-back {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--primary) .3s ease;
+    font-size: .875rem;
+}
+
+.navbar-back:hover {
+    color: var(--primary-dark);
+}
