@@ -8,6 +8,7 @@ import { initSkillsDiagram } from "./skills.js";
 import { renderProjectGlance } from "./case-studies/1800medicare.js";
 import { renderPainPoints } from "./case-studies/1800medicare.js";
 import { renderPersona } from "./case-studies/1800medicare.js";
+import { renderJourneyMap } from "./case-studies/1800medicare.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -22,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderProjectGlance();
   renderPainPoints();
   renderPersona();
+  renderJourneyMap();
 
   // Scroll to top
   const scrollBtn = document.getElementById("scrollTop");

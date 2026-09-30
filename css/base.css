@@ -11,6 +11,7 @@ VARIABLES
 
     --accent: #C4956A;
     --accent-light: #F5E0D0;
+    --accent-ultralight: #FEF6EE;
     --blush-background: #F3E6E0;
 
     --sage-light: #EEF3EF;
@@ -42,6 +43,8 @@ VARIABLES
     --med-teal-light: #E8F4F0;
     --med-sage: #6B8F71;
     --med-sage-light: #EEF3EF;
+    --med-badstatus-bg: #FDF0EE;
+    --med-badstatus-border: #E8C5BB;
 
 }
 

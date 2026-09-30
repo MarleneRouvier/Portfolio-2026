@@ -2,7 +2,8 @@ import {
     PROJECT_GLANCE,
     ICONS,
     PAIN_POINTS,
-    USER_PERSONA
+    USER_PERSONA,
+    JOURNEY_STEPS
 } from "../constants.js";
 
 //Projects at Glance
@@ -126,6 +127,44 @@ export function renderPersona() {
 
 }
 
+// Journey Map
+export function renderJourneyMap() {
+
+    const container = document.getElementById("journey-grid");
+
+    if (!container) return;
+
+    container.innerHTML = JOURNEY_STEPS
+        .map(createJourneyStep)
+        .join("");
+
+}
+
+function createJourneyStep(step) {
+
+    return `
+    <article class="cs-journey-card cs-journey-card--${step.status}">
+
+      <span class="cs-journey-number">
+        ${step.number}
+      </span>
+
+      <h3 class="cs-journey-title">
+        ${step.title}
+      </h3>
+
+      <p class="cs-journey-emotion">
+        ${step.emotion}
+      </p>
+
+      <p class="cs-journey-description">
+        ${step.description}
+      </p>
+
+    </article>
+  `;
+
+}
 
 
 

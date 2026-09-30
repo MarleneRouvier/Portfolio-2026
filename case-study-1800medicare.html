@@ -389,6 +389,75 @@
     </section>
 
 
+
+
+    <!-- JOURNEY MAP -->
+    <section class="cs-section fade-up">
+
+        <div class="cs-section-eyebrow">
+            Journey map
+        </div>
+
+        <h2 class="cs-section-title">
+            Mei Lin's first experience
+        </h2>
+
+        <p class="cs-section-description">
+            The emotional arc starts with optimism and drops steadily into frustration.
+            <strong>The biggest drop happens at step 3, during setup.</strong>
+            That's where the redesign focuses most.
+        </p>
+
+        <div class="cs-journey-chart">
+
+            <svg viewBox="0 0 860 120" xmlns="http://www.w3.org/2000/svg">
+
+                <line x1="0" y1="20" x2="860" y2="20" stroke="#F0EBE3" stroke-width="1" />
+                <line x1="0" y1="60" x2="860" y2="60" stroke="#F0EBE3" stroke-width="1" />
+                <line x1="0" y1="100" x2="860" y2="100" stroke="#F0EBE3" stroke-width="1" />
+
+                <text x="4" y="24" font-size="9" fill="#C4956A" font-family="Plus Jakarta Sans, sans-serif">
+                    😊 Good
+                </text>
+
+                <text x="4" y="64" font-size="9" fill="#C4956A" font-family="Plus Jakarta Sans, sans-serif">
+                    😐 OK
+                </text>
+
+                <text x="4" y="104" font-size="9" fill="#8B4A3C" font-family="Plus Jakarta Sans, sans-serif">
+                    😟 Bad
+                </text>
+
+                <polyline points="140,55 280,20 420,65 560,85 700,95 840,100" fill="none" stroke="#8B4A3C"
+                    stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+
+                <polygon points="140,55 280,20 420,65 560,85 700,95 840,100 840,110 140,110" fill="#8B4A3C"
+                    opacity="0.07" />
+
+                <circle cx="140" cy="55" r="5" fill="#C4956A" />
+                <circle cx="280" cy="20" r="5" fill="#1D9E75" />
+                <circle cx="420" cy="65" r="5" fill="#C4956A" />
+                <circle cx="560" cy="85" r="5" fill="#8B4A3C" />
+                <circle cx="700" cy="95" r="5" fill="#8B4A3C" />
+                <circle cx="840" cy="100" r="5" fill="#8B4A3C" />
+
+                <line x1="420" y1="20" x2="420" y2="65" stroke="#8B4A3C" stroke-width="1" stroke-dasharray="3 2" />
+
+                <text x="425" y="16" font-size="8" fill="#8B4A3C" font-family="Plus Jakarta Sans, sans-serif"
+                    font-weight="600">
+                    Biggest drop ↓
+                </text>
+
+            </svg>
+
+        </div>
+
+        <div class="cs-journey-grid" id="journey-grid">
+        </div>
+
+    </section>
+
+
     <script type="module" src="./js/app.js"></script>
 
 </body>

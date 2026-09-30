@@ -198,7 +198,7 @@
 }
 
 .cs-section-eyebrow:before {
-        content: '';
+    content: '';
     display: inline-block;
     width: 24px;
     height: 2px;
@@ -651,4 +651,114 @@ PROJECT AT A GLANCE
     .cs-role-reflection {
         position: static;
     }
+}
+
+
+
+
+
+
+
+/* ==========================================================
+   JOURNEY MAP
+========================================================== */
+
+.cs-section {
+    padding: 3rem 5vw;
+}
+
+.cs-section-description {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.85;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.cs-section p strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.cs-journey-chart {
+    margin-top: 2rem;
+    overflow-x: auto;
+    text-align: center;
+}
+
+.cs-journey-chart svg {
+    width: 100%;
+    max-width: 860px;
+    display: block;
+    margin: 0 auto;
+}
+
+.cs-journey-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.cs-journey-card {
+    text-align: center;
+    padding: 0.75rem 0.5rem;
+    background: var(--white);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+
+.cs-journey-card--neutral {
+    background: var(--white);
+}
+
+.cs-journey-card--good .cs-journey-emotion{
+    color: var(--success);
+}
+
+.cs-journey-card--focus{
+    background: var(--accent-ultralight);
+    border-color: var(--accent-light);
+}
+
+.cs-journey-card--focus .cs-journey-emotion{
+    color: var(--accent);
+}
+
+.cs-journey-card--bad{
+    background: var(--med-badstatus-bg);
+    border-color: var(--med-badstatus-border);
+}
+
+.cs-journey-card--bad .cs-journey-emotion{
+    color: var(--primary-dark);
+}
+
+.cs-journey-number {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.cs-journey-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 4px;
+}
+
+.cs-journey-emotion {
+        font-size: 0.68rem;
+    color: #C4956A;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.cs-journey-description {
+        font-size: 0.68rem;
+    color: var(--text-muted);
+    line-height: 1.4;
 }

@@ -512,4 +512,48 @@ export const HEURISTIC_AUDIT = [
 
 ];
 
-
+// Journey Map
+export const JOURNEY_STEPS = [
+  {
+    number: "01",
+    title: "Discover",
+    emotion: "Neutral",
+    description: "Unclear difference between app and website",
+    status: "neutral"
+  },
+  {
+    number: "02",
+    title: "Install",
+    emotion: "Optimistic",
+    description: "App downloaded successfully",
+    status: "good"
+  },
+  {
+    number: "03",
+    title: "Set up",
+    emotion: "Confused",
+    description: "No guidance linking three apps",
+    status: "focus"
+  },
+  {
+    number: "04",
+    title: "First login",
+    emotion: "Anxious",
+    description: "Error with no explanation",
+    status: "bad"
+  },
+  {
+    number: "05",
+    title: "Find records",
+    emotion: "Frustrated",
+    description: "No search, no plain-language labels",
+    status: "bad"
+  },
+  {
+    number: "06",
+    title: "Share",
+    emotion: "Disappointed",
+    description: "No official share function exists",
+    status: "bad"
+  }
+];
