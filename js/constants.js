@@ -32,11 +32,11 @@ export const PROJECTS = [
     ],
 
     buttons: [
-      {
+      /*{
         label: "View case study",
         href: "case-study-argento.html",
         style: "primary"
-      },
+      },*/
       {
         label: "Visit live site",
         href: "https://www.elrinconargento.com",
@@ -87,7 +87,7 @@ export const PROJECTS = [
     buttons: [
       {
         label: "View case study",
-        href: "wedding-case-study.html",
+        href: "case-study-wedding.html",
         style: "primary"
       },
       {
@@ -212,6 +212,7 @@ export const SKILLS = [
   }
 ];
 
+// Soft Skills List
 export const SOFT_SKILLS = [
   {
     title: "Empathetic",
@@ -242,5 +243,29 @@ export const SOFT_SKILLS = [
     title: "Adaptable",
     icon: "lucide:heart",
     desc: "I'm curious, open-minded and quick to learn in changing contexts and priorities."
+  }
+];
+
+//Project Glance
+export const PROJECT_GLANCE = [
+  {
+    title: "3 → 1",
+    description: "From three separate apps to one unified experience.",
+    icon: "flow"
+  },
+  {
+    title: "5",
+    description: "Key user flows redesigned to simplify essential health tasks.",
+    icon: "document"
+  },
+  {
+    title: "Focus on Trust",
+    description: "Clarity, transparency and human-centred design.",
+    icon: "shield"
+  },
+  {
+    title: "Goal",
+    description: "Empower Australians to manage and securely share their health information.",
+    icon: "info"
   }
 ];

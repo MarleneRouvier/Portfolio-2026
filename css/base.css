@@ -13,6 +13,8 @@ VARIABLES
     --accent-light: #F5E0D0;
     --blush-background: #F3E6E0;
 
+    --sage-light: #EEF3EF;
+
     /* Neutrals */
     --cream: #FAF8F5;
     --sand: #F0EBE3;
@@ -34,6 +36,12 @@ VARIABLES
     --serif: "Cormorant Garamond", Georgia, serif;
     --instrument: "Instrument Serif", Georgia, serif;
     --sans: "Inter", system-ui, sans-serif;
+
+    /* Medicare */
+    --med-teal: #1A5C7A;
+    --med-teal-light: #E8F4F0;
+    --med-sage: #6B8F71;
+    --med-sage-light: #EEF3EF;
 
 }
 

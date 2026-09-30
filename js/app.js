@@ -3,6 +3,8 @@ import "./skills-strip.js";
 import "./project-cards.js";
 import "./process.js";
 import "./soft-skills.js";
+import "./skills.js";
+import "./case-studies/1800medicare.js";
 
 import { initSkillsDiagram } from "./skills.js";
 
