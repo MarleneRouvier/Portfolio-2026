@@ -455,3 +455,61 @@ export const USER_PERSONA = {
   ]
 };
 
+// My Role - Skills
+export const ROLE_SKILLS = [
+
+  "Research",
+  "UX Strategy",
+  "User Journey",
+  "Wireframing",
+  "UI Design",
+  "Prototyping",
+  "Frontend"
+
+];
+
+export const HEURISTIC_AUDIT = [
+
+  {
+    severity: "Critical",
+    score: "1/10",
+    title: "Error prevention & recovery",
+    description: "\"No records found\" with zero explanation.",
+    type: "critical"
+  },
+
+  {
+    severity: "Critical",
+    score: "2/10",
+    title: "Visibility of system status",
+    description: "No feedback after completing actions.",
+    type: "critical"
+  },
+
+  {
+    severity: "Critical",
+    score: "2/10",
+    title: "Help users recognize & recover from errors",
+    description: "No guidance when something goes wrong.",
+    type: "critical"
+  },
+
+  {
+    severity: "Major",
+    score: "3/10",
+    title: "User control & freedom",
+    description: "Users cannot edit their own health information.",
+    type: "major"
+  },
+
+  {
+    severity: "Moderate",
+    score: "4/10",
+    title: "Match between system & real world",
+    description: "Medical terminology lacks plain-language support.",
+    type: "moderate"
+  }
+
+];
+
+

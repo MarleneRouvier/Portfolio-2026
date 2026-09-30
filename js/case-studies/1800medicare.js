@@ -129,6 +129,7 @@ export function renderPersona() {
 
 
 
+
 // Helpers
 function createIcon(icon) {
 

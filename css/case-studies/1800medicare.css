@@ -40,7 +40,7 @@
 ========================================================== */
 
 .cs-hero {
-    padding: 5rem 5vw 3rem;
+    padding: 1rem 5vw 3rem;
 }
 
 .cs-hero-grid {
@@ -195,6 +195,15 @@
     font-weight: 600;
     letter-spacing: .12em;
     text-transform: uppercase;
+}
+
+.cs-section-eyebrow:before {
+        content: '';
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    background: var(--primary);
+    border-radius: 1px;
 }
 
 .cs-connector-svg {
@@ -570,4 +579,76 @@ PROJECT AT A GLANCE
         gap: 1.5rem;
     }
 
+}
+
+/* ==========================================================
+   MY ROLE
+========================================================== */
+
+.cs-role {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: start;
+    padding: 3rem 5vw;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    background-color: var(--blush-background);
+}
+
+.cs-role-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    margin: 2rem 0;
+}
+
+.cs-role-chip {
+    padding: .6rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--white);
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.cs-role-reflection {
+    margin-top: 4rem;
+    padding: 2rem;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+}
+
+.cs-reflection-label {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--primary);
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.cs-reflection-quote {
+    margin: 0;
+    padding-left: 1.25rem;
+    border-left: 3px solid var(--primary);
+    font-family: var(--serif);
+    font-size: 1rem;
+    line-height: 1.8;
+    font-style: italic;
+    color: var(--dark);
+}
+
+@media (max-width:900px) {
+    .cs-role {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .cs-role-reflection {
+        position: static;
+    }
 }
