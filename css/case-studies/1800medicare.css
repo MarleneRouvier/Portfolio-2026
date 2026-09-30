@@ -971,3 +971,34 @@ PROJECT AT A GLANCE
     display: inline-block;
     background-color: var(--blush-background);
 }
+
+
+
+
+
+
+
+.cs-disclaimer {
+    text-align: center;
+    padding: 2rem 5vw;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-style: italic;
+    border-top: 1px solid var(--border);
+}
+
+/********************************
+FOOTER
+**********************************/
+
+.footer-back {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color .3s ease;
+    font-size: .875rem;
+}
+
+.footer-back:hover {
+    color: var(--primary-dark);
+}
