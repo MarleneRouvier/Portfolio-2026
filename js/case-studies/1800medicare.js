@@ -3,7 +3,8 @@ import {
     ICONS,
     PAIN_POINTS,
     USER_PERSONA,
-    JOURNEY_STEPS
+    JOURNEY_STEPS,
+    DESIGN_DECISIONS
 } from "../constants.js";
 
 //Projects at Glance
@@ -166,6 +167,90 @@ function createJourneyStep(step) {
 
 }
 
+// Design Decisions
+export function renderDesignDecisions() {
+
+    const container = document.getElementById("design-decisions");
+
+    if (!container) return;
+
+    container.innerHTML = DESIGN_DECISIONS
+        .map(createDecision)
+        .join("");
+
+    initAccordion();
+
+}
+
+function createDecision(item) {
+
+    return `
+        <article class="accordion-item">
+
+            <button class="accordion-trigger">
+
+                <span class="accordion-num">
+                    ${item.number}
+                </span>
+
+                <span class="accordion-title">
+                    ${item.title}
+                </span>
+
+                <span class="accordion-arrow">
+                    ▼
+                </span>
+
+            </button>
+
+            <div class="accordion-body">
+
+                <div class="acc-ba">
+
+                    <strong>Before:</strong>
+
+                    ${item.before}
+
+                </div>
+
+                <div class="acc-ba">
+
+                    <strong>After:</strong>
+
+                    ${item.after}
+
+                </div>
+
+                <div class="acc-note">
+
+                    ${item.note}
+
+                </div>
+
+            </div>
+
+        </article>
+    `;
+
+}
+
+function initAccordion() {
+
+    document
+        .querySelectorAll(".accordion-trigger")
+        .forEach(trigger => {
+
+            trigger.addEventListener("click", () => {
+
+                const item = trigger.parentElement;
+
+                item.classList.toggle("active");
+
+            });
+
+        });
+
+}
 
 
 

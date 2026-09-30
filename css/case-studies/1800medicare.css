@@ -712,25 +712,25 @@ PROJECT AT A GLANCE
     background: var(--white);
 }
 
-.cs-journey-card--good .cs-journey-emotion{
+.cs-journey-card--good .cs-journey-emotion {
     color: var(--success);
 }
 
-.cs-journey-card--focus{
+.cs-journey-card--focus {
     background: var(--accent-ultralight);
     border-color: var(--accent-light);
 }
 
-.cs-journey-card--focus .cs-journey-emotion{
+.cs-journey-card--focus .cs-journey-emotion {
     color: var(--accent);
 }
 
-.cs-journey-card--bad{
+.cs-journey-card--bad {
     background: var(--med-badstatus-bg);
     border-color: var(--med-badstatus-border);
 }
 
-.cs-journey-card--bad .cs-journey-emotion{
+.cs-journey-card--bad .cs-journey-emotion {
     color: var(--primary-dark);
 }
 
@@ -751,14 +751,127 @@ PROJECT AT A GLANCE
 }
 
 .cs-journey-emotion {
-        font-size: 0.68rem;
+    font-size: 0.68rem;
     color: #C4956A;
     font-weight: 500;
     margin-bottom: 6px;
 }
 
 .cs-journey-description {
-        font-size: 0.68rem;
+    font-size: 0.68rem;
     color: var(--text-muted);
     line-height: 1.4;
+}
+
+/* ==========================================================
+   DESIGN DECISIONS
+========================================================== */
+
+.cs-section-design {
+    background-color: var(--sage-light);
+    margin: 2rem;
+    border-radius: 30px;
+    border: 1px solid rgba(107, 143, 113, 0.2);
+}
+
+.accordion-body {
+    display: none;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    margin-top: 1.5rem;
+}
+
+.accordion-item {
+    border-bottom: 1px solid var(--border);
+}
+
+.accordion-item.active .accordion-body {
+    display: block;
+}
+
+.accordion-item.active .accordion-arrow {
+    transform: rotate(180deg);
+}
+
+.accordion-trigger {
+    width: 100%;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    transition: background 0.2s;
+    font-family: var(--sans);
+}
+
+.accordion-num {
+    font-family: var(--serif);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--primary);
+    flex-shrink: 0;
+    min-width: 28px;
+}
+
+.accordion-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--dark);
+    flex: 1;
+}
+
+.accordion-arrow {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+
+.accordion-body {
+    display: none;
+    padding: 1rem 1.5rem 1.25rem;
+    background: var(--cream);
+}
+
+.acc-ba {
+    font-size: 0.85rem;
+    line-height: 1.65;
+    color: var(--text-muted);
+    margin-bottom: 0.4rem;
+    font-weight: 300;
+}
+
+.acc-ba strong {
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.accordion-body.open {
+    display: block;
+}
+
+.acc-note {
+    margin-top: 0.75rem;
+    background: var(--primary-light);
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 0.75rem;
+    color: var(--primary);
+    font-family: monospace;
+    border-left: 3px solid var(--primary);
+    line-height: 1.5;
+}
+
+.acc-note::before {
+    content: "⌨️ Dev note: ";
+    font-weight: 600;
 }

@@ -557,3 +557,61 @@ export const JOURNEY_STEPS = [
     status: "bad"
   }
 ];
+
+// Design Decision
+export const DESIGN_DECISIONS = [
+  {
+    number: "01",
+    title: "Guided onboarding over a login wall",
+    before:
+      'A single "Sign in with myGov" button. No explanation. No alternative path. Dead end for anyone without an existing account.',
+    after:
+      "A 3-step guided flow. Each step explains what's happening and why before asking the user to act. Progress indicator makes the process feel finite.",
+    note:
+      "This stepper can be implemented with a simple array of step objects and a current index in state, zero external dependencies required."
+  },
+
+  {
+    number: "02",
+    title: "A dashboard that knows who you are",
+    before:
+      "Six identical coloured tiles with no hierarchy. No indication of new activity. No personalisation.",
+    after:
+      `Greeting with user's name and avatar. Priority alert card for new results. Each tile shows a real count ("8 records", "1 new").`,
+    note:
+      "Tile counts can be cached locally with a simple service. The alert card uses an observable that refreshes on app open."
+  },
+
+  {
+    number: "03",
+    title: "Plain-language labels alongside clinical names",
+    before:
+      `"Influenza NEC", "HbA1c", "Lipid panel" — labels that mean nothing to most users.`,
+    after:
+      "A second line shows the plain-language equivalent while preserving the clinical name.",
+    note:
+      "Requires a lookup table mapping clinical codes to human-friendly labels."
+  },
+
+  {
+    number: "04",
+    title: "Empty states that explain, not alarm",
+    before:
+      '"No records found." Three words that could mean almost anything.',
+    after:
+      "Every empty state answers: What happened? Why? What should I do next?",
+    note:
+      "Trust is built in moments of uncertainty."
+  },
+
+  {
+    number: "05",
+    title: "Official share function",
+    before:
+      "Users rely on screenshots that don't look trustworthy.",
+    after:
+      "A verified PDF with an official verification seal.",
+    note:
+      "Official documents inspire far more confidence than screenshots."
+  }
+];
