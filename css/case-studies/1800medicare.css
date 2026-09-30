@@ -941,3 +941,33 @@ PROJECT AT A GLANCE
 .learning-title:hover .learning-tooltip {
     display: block;
 }
+
+/* ==========================================================
+   WHATS NEXT
+========================================================== */
+
+.cs-next-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+.cs-next-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.tag {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 5px 12px;
+    border-radius: 100px;
+    background: #fff;
+    color: var(--text);
+    border: 1px solid var(--border);
+    display: inline-block;
+    background-color: var(--blush-background);
+}

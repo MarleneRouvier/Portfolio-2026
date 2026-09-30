@@ -5,7 +5,8 @@ import {
     USER_PERSONA,
     JOURNEY_STEPS,
     DESIGN_DECISIONS,
-    LEARNINGS
+    LEARNINGS,
+    NEXT_STEPS
 } from "../constants.js";
 
 //Projects at Glance
@@ -286,6 +287,29 @@ function createLearning(item) {
             </span>
 
         </article>
+    `;
+
+}
+
+// Whats Next
+export function renderNextSteps() {
+
+    const container = document.getElementById("next-tags");
+
+    if (!container) return;
+
+    container.innerHTML = NEXT_STEPS
+        .map(createNextTag)
+        .join("");
+
+}
+
+function createNextTag(item) {
+
+    return `
+        <span class="tag">
+            ${item}
+        </span>
     `;
 
 }

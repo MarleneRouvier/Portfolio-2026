@@ -648,3 +648,12 @@ export const LEARNINGS = [
       "I designed this as someone who arrived in Australia not knowing how any of these systems worked. That made every friction point personal."
   }
 ];
+
+
+export const NEXT_STEPS = [
+  "User testing with 3–5 real users",
+  "Accessibility audit — WCAG AA",
+  "Notification system design",
+  "Design system documentation",
+  "Developer handoff in Figma"
+];
