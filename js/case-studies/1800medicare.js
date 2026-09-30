@@ -4,7 +4,8 @@ import {
     PAIN_POINTS,
     USER_PERSONA,
     JOURNEY_STEPS,
-    DESIGN_DECISIONS
+    DESIGN_DECISIONS,
+    LEARNINGS
 } from "../constants.js";
 
 //Projects at Glance
@@ -249,6 +250,43 @@ function initAccordion() {
             });
 
         });
+
+}
+
+// Outcomes and Learnings
+export function renderLearnings() {
+
+    const container = document.getElementById("learning-list");
+
+    if (!container) return;
+
+    container.innerHTML = LEARNINGS
+        .map(createLearning)
+        .join("");
+
+}
+
+function createLearning(item) {
+
+    return `
+        <article class="learning-item">
+
+            <span class="learning-number">
+                ${item.number}
+            </span>
+
+            <span class="learning-title">
+
+                ${item.title}
+
+                <span class="learning-tooltip">
+                    ${item.tooltip}
+                </span>
+
+            </span>
+
+        </article>
+    `;
 
 }
 

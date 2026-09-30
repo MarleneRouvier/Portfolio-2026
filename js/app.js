@@ -10,6 +10,7 @@ import { renderPainPoints } from "./case-studies/1800medicare.js";
 import { renderPersona } from "./case-studies/1800medicare.js";
 import { renderJourneyMap } from "./case-studies/1800medicare.js";
 import { renderDesignDecisions } from "./case-studies/1800medicare.js";
+import { renderLearnings } from "./case-studies/1800medicare.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -26,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderPersona();
   renderJourneyMap();
   renderDesignDecisions();
+  renderLearnings();
 
   // Scroll to top
   const scrollBtn = document.getElementById("scrollTop");

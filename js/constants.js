@@ -615,3 +615,36 @@ export const DESIGN_DECISIONS = [
       "Official documents inspire far more confidence than screenshots."
   }
 ];
+
+export const LEARNINGS = [
+  {
+    number: "01",
+    title: "Be honest about limitations.",
+    tooltip:
+      "If users can't edit their data, tell them. Don't let them think they're doing something wrong."
+  },
+  {
+    number: "02",
+    title: "Words matter as much as layout.",
+    tooltip:
+      `"HbA1c" means nothing to most people. Adding a plain-language label costs almost nothing and changes everything.`
+  },
+  {
+    number: "03",
+    title: "Empty screens are still screens.",
+    tooltip:
+      `"No records found" isn't a message, it's a dead end. Every empty state needs to explain what happened and what to do next.`
+  },
+  {
+    number: "04",
+    title: "Design for what can ship.",
+    tooltip:
+      "Every choice I made here could be built by a real team in a real sprint. Good design doesn't live only in Figma."
+  },
+  {
+    number: "05",
+    title: "Empathy comes from experience.",
+    tooltip:
+      "I designed this as someone who arrived in Australia not knowing how any of these systems worked. That made every friction point personal."
+  }
+];

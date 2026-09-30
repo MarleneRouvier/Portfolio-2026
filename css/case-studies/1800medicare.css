@@ -875,3 +875,69 @@ PROJECT AT A GLANCE
     content: "⌨️ Dev note: ";
     font-weight: 600;
 }
+
+/* ==========================================================
+   LEARNINGS AND OUTCOMES
+========================================================== */
+
+.cs-learning-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 2rem;
+    margin-top: 1.25rem;
+}
+
+.learning-item {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    position: relative;
+}
+
+.learning-number {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.learning-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--dark);
+    cursor: default;
+    border-bottom: 1px dashed var(--border);
+    position: relative;
+    display: inline;
+}
+
+.learning-tooltip {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 8px);
+    background: var(--accent-ultralight);
+    color: var(--dark);
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.6;
+    padding: 10px 14px;
+    border-radius: 10px;
+    width: 320px;
+    z-index: 10;
+    box-shadow: 0 4px 20px rgba(28, 26, 46, 0.2);
+}
+
+.learning-tooltip::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 16px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid var(--dark);
+}
+
+.learning-title:hover .learning-tooltip {
+    display: block;
+}
