@@ -1,18 +1,40 @@
 import { SOFT_SKILLS } from "./constants.js";
 
-const grid = document.getElementById("softSkillsGrid");
+export function renderSoftSkills() {
 
-if (grid) {
+    const grid = document.getElementById("softSkillsGrid");
 
-    grid.innerHTML = SOFT_SKILLS.map((skill, index) => `
+    if (!grid) return;
 
+    grid.innerHTML = SOFT_SKILLS
+        .map(createSoftSkill)
+        .join("");
+
+    grid.querySelectorAll(".soft-skills-card").forEach(card => {
+
+        card.addEventListener("click", () => {
+
+            card.classList.toggle("active");
+
+        });
+
+    });
+
+}
+
+function createSoftSkill(skill, index) {
+
+    return `
         <article
             class="soft-skills-card fade-up"
             style="transition-delay:${index * .05}s">
 
             <div class="soft-skills-icon">
-                <iconify-icon 
-                icon="${skill.icon}" width="25" height="25"></iconify-icon>
+                <iconify-icon
+                    icon="${skill.icon}"
+                    width="25"
+                    height="25">
+                </iconify-icon>
             </div>
 
             <div class="soft-skills-title">
@@ -26,17 +48,6 @@ if (grid) {
             </div>
 
         </article>
-
-    `).join("");
-
-    grid.querySelectorAll(".soft-skills-card").forEach(card => {
-
-        card.addEventListener("click", () => {
-
-            card.classList.toggle("active");
-
-        });
-
-    });
+    `;
 
 }

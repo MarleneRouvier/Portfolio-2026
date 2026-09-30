@@ -1,10 +1,17 @@
 import { PROJECTS } from "./constants.js";
-const projectsGrid = document.getElementById("projects-grid");
 
-projectsGrid.innerHTML = PROJECTS.map(createProjectCard).join("");
-document
-    .querySelectorAll(".project-card")
-    .forEach(card => card.classList.add("visible"));
+export function renderProjectCards() {
+
+    const projectsGrid = document.getElementById("projects-grid");
+
+    if (!projectsGrid) return;
+
+    projectsGrid.innerHTML = PROJECTS.map(createProjectCard).join("");
+
+    document
+        .querySelectorAll(".project-card")
+        .forEach(card => card.classList.add("visible"));
+}
 
 function createProjectCard(project) {
 
@@ -16,8 +23,8 @@ function createProjectCard(project) {
             <div class="project-body">
 
                 ${project.meta
-                    ? `<p class="project-meta">${project.meta}</p>`
-                    : ""}
+            ? `<p class="project-meta">${project.meta}</p>`
+            : ""}
 
                 <h3 class="project-title">
                     ${project.title}

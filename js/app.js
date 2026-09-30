@@ -1,43 +1,71 @@
 import "./constants.js";
-import "./skills-strip.js";
-import "./project-cards.js";
-import "./process.js";
-import "./soft-skills.js";
-import "./skills.js";
-import "./case-studies/1800medicare.js";
 
+import { renderSkillsStrip } from "./skills-strip.js";
+import { renderProjectCards } from "./project-cards.js";
+import { initProcess } from "./process.js";
+import { renderSoftSkills } from "./soft-skills.js";
 import { initSkillsDiagram } from "./skills.js";
+import { renderProjectGlance } from "./case-studies/1800medicare.js";
 
 document.addEventListener("DOMContentLoaded", () => {
+
+  // Home
+  renderSkillsStrip();
+  renderProjectCards();
+  renderSoftSkills();
+  initProcess();
   initSkillsDiagram();
 
+  // Medicare Case Study
+  renderProjectGlance();
+
+  // Scroll to top
   const scrollBtn = document.getElementById("scrollTop");
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
+  if (scrollBtn) {
+
+    scrollBtn.addEventListener("click", () => {
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
       });
+
+    });
+
+    window.addEventListener("scroll", () => {
+
+      scrollBtn.classList.toggle("visible", window.scrollY > 400);
+
+    });
+
+  }
+
+  // Fade-up animations
+  const observer = new IntersectionObserver(
+
+    (entries) => {
+
+      entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+
+          entry.target.classList.add("visible");
+
+        }
+
+      });
+
     },
+
     {
       threshold: 0.1,
     }
+
   );
-
-  scrollBtn.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  });
-
-  window.addEventListener("scroll", () => {
-    scrollBtn.classList.toggle("visible", window.scrollY > 400);
-  });
 
   document
     .querySelectorAll(".fade-up")
     .forEach((el) => observer.observe(el));
+
 });

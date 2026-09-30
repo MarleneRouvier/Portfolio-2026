@@ -1,3 +1,7 @@
+/**************************************
+MAIN PAGE
+**************************************/
+
 // Skills Strip List
 export const SKILLS_STRIP = [
   "Figma",
@@ -246,6 +250,10 @@ export const SOFT_SKILLS = [
   }
 ];
 
+/***********************************
+MEDICARE PAGE
+***********************************/
+
 //Project Glance
 export const PROJECT_GLANCE = [
   {
@@ -269,3 +277,136 @@ export const PROJECT_GLANCE = [
     icon: "info"
   }
 ];
+
+// Icons
+export const ICONS = {
+
+  flow: `
+        <svg
+            width="19"
+            height="19"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+
+            <circle cx="5" cy="6" r="2"></circle>
+            <circle cx="19" cy="12" r="2"></circle>
+            <circle cx="5" cy="18" r="2"></circle>
+
+            <path d="M7 6h4a4 4 0 0 1 4 4v0a4 4 0 0 0 4 4"></path>
+            <path d="M17 18H7"></path>
+
+        </svg>
+    `,
+
+  control: `
+        <svg
+            width="19"
+            height="19"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+
+            <circle cx="12" cy="12" r="3"></circle>
+
+            <path d="M12 1v2"></path>
+            <path d="M12 21v2"></path>
+
+            <path d="M4.22 4.22l1.42 1.42"></path>
+            <path d="M18.36 18.36l1.42 1.42"></path>
+
+            <path d="M1 12h2"></path>
+            <path d="M21 12h2"></path>
+
+            <path d="M4.22 19.78l1.42-1.42"></path>
+            <path d="M18.36 5.64l1.42-1.42"></path>
+
+        </svg>
+    `,
+
+  document: `
+        <svg
+            width="19"
+            height="19"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+
+            <polyline points="14 2 14 8 20 8"></polyline>
+
+            <line x1="9" y1="13" x2="15" y2="13"></line>
+
+            <line x1="9" y1="17" x2="11" y2="17"></line>
+
+        </svg>
+    `,
+
+  warning: `
+        <svg
+            width="19"
+            height="19"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+
+            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0"></path>
+
+            <line x1="12" y1="9" x2="12" y2="13"></line>
+
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+
+        </svg>
+    `,
+
+  shield: `
+        <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+
+        </svg>
+    `,
+
+  info: `
+        <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+
+            <circle cx="12" cy="12" r="10"></circle>
+
+            <path d="M12 16v-4"></path>
+
+            <path d="M12 8h.01"></path>
+
+        </svg>
+    `
+
+};
+

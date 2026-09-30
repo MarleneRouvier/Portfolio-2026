@@ -1,17 +1,25 @@
-const tabs = document.querySelectorAll(".process-tab");
-const panels = document.querySelectorAll(".process-step-panel");
+export function initProcess() {
 
-tabs.forEach((tab, index) => {
+    const tabs = document.querySelectorAll(".process-tab");
+    const panels = document.querySelectorAll(".process-step-panel");
 
-    tab.addEventListener("click", () => {
+    if (!tabs.length || !panels.length) return;
 
-        tabs.forEach(t => t.classList.remove("active"));
+    tabs.forEach((tab, index) => {
 
-        panels.forEach(panel => panel.style.display = "none");
+        tab.addEventListener("click", () => {
 
-        tab.classList.add("active");
-        panels[index].style.display = "flex";
+            tabs.forEach(tab => tab.classList.remove("active"));
+
+            panels.forEach(panel => {
+                panel.style.display = "none";
+            });
+
+            tab.classList.add("active");
+            panels[index].style.display = "flex";
+
+        });
 
     });
 
-});
+}

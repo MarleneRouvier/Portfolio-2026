@@ -279,3 +279,90 @@
     }
 
 }
+
+/*==================================================
+PROJECT AT A GLANCE
+==================================================*/
+
+.cs-glance {
+    padding: 1.25rem 5vw;
+    background: var(--sage-light);
+    border-top: 1px solid rgba(107, 143, 113, 0.2);
+    border-bottom: 1px solid rgba(107, 143, 113, 0.2);
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+}
+
+.cs-glance-label {
+    font-family: var(--sans);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    line-height: 1.5;
+    padding-right: 2.5rem;
+    border-right: 1px solid rgba(107, 143, 113, 0.25);
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.cs-glance-items {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding-left: 2.5rem;
+    gap: 0;
+}
+
+.cs-glance-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.9rem;
+    flex: 1;
+    padding: 0 1.5rem 0 0;
+}
+
+.cs-glance-icon {
+    color: var(--sage-dark);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.cs-glance-content {
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+}
+
+.cs-glance-stat {
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+.cs-glance-desc {
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    line-height: 1.45;
+    font-weight: 300;
+}
+
+@media (max-width: 992px) {
+
+    .cs-glance-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cs-glance-items {
+        grid-template-columns: 1fr;
+    }
+
+}
