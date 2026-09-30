@@ -6,6 +6,8 @@ import { initProcess } from "./process.js";
 import { renderSoftSkills } from "./soft-skills.js";
 import { initSkillsDiagram } from "./skills.js";
 import { renderProjectGlance } from "./case-studies/1800medicare.js";
+import { renderPainPoints } from "./case-studies/1800medicare.js";
+import { renderPersona } from "./case-studies/1800medicare.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -18,6 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Medicare Case Study
   renderProjectGlance();
+  renderPainPoints();
+  renderPersona();
 
   // Scroll to top
   const scrollBtn = document.getElementById("scrollTop");

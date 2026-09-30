@@ -410,3 +410,48 @@ export const ICONS = {
 
 };
 
+// Problem Section
+export const PAIN_POINTS = [
+
+  {
+    icon: "flow",
+    title: "Confusing experience",
+    description: "3 apps, 3 different logins and no clear path."
+  },
+
+  {
+    icon: "control",
+    title: "No control",
+    description: "Users can't update or manage their own information."
+  },
+
+  {
+    icon: "document",
+    title: "Hard to understand",
+    description: "Medical information is technical and overwhelming."
+  },
+
+  {
+    icon: "warning",
+    title: "Unclear feedback",
+    description: "Errors don't explain what happened or what to do."
+  }
+
+];
+
+export const USER_PERSONA = {
+  initials: "ML",
+  name: "Mei Lin",
+  age: 34,
+  role: "International student",
+  location: "Sydney",
+  quote:
+    "I just want to see my results and know everything is okay.",
+  needs: [
+    "Guidance",
+    "Confidence",
+    "Clarity",
+    "Control"
+  ]
+};
+
