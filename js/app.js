@@ -12,6 +12,9 @@ import { renderJourneyMap } from "./case-studies/1800medicare.js";
 import { renderDesignDecisions } from "./case-studies/1800medicare.js";
 import { renderLearnings } from "./case-studies/1800medicare.js";
 import { renderNextSteps } from "./case-studies/1800medicare.js";
+import { renderResearchSummary } from "./case-studies/1800medicare.js";
+import { renderHeuristicAudit } from "./case-studies/1800medicare.js";
+import { renderResearchFindings } from "./case-studies/1800medicare.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -30,6 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
   renderDesignDecisions();
   renderLearnings();
   renderNextSteps();
+  renderResearchSummary();
+  renderHeuristicAudit();
+  renderResearchFindings();
 
   // Scroll to top
   const scrollBtn = document.getElementById("scrollTop");

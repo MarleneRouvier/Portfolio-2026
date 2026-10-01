@@ -6,7 +6,10 @@ import {
     JOURNEY_STEPS,
     DESIGN_DECISIONS,
     LEARNINGS,
-    NEXT_STEPS
+    NEXT_STEPS,
+    HEURISTIC_AUDIT,
+    RESEARCH_FINDINGS,
+    RESEARCH_SUMMARY,
 } from "../constants.js";
 
 //Projects at Glance
@@ -314,7 +317,120 @@ function createNextTag(item) {
 
 }
 
+// Research Section
+export function renderResearchSummary() {
 
+    const container = document.getElementById("research-summary");
+
+    if (!container) return;
+
+    container.innerHTML = RESEARCH_SUMMARY
+        .map(createResearchSummaryItem)
+        .join("");
+
+}
+
+function createResearchSummaryItem(item) {
+
+    return `
+        <article class="cs-research-summary-item">
+
+            <div class="cs-research-summary-icon">
+                ${createIcon(item.icon)}
+            </div>
+
+            <div>
+
+                <div class="cs-research-summary-value">
+                    ${item.value}
+                </div>
+
+                <div class="cs-research-summary-label">
+                    ${item.label}
+                </div>
+
+            </div>
+
+        </article>
+    `;
+
+}
+
+export function renderHeuristicAudit() {
+
+    const container = document.getElementById("heuristic-audit");
+
+    if (!container) return;
+
+    container.innerHTML = HEURISTIC_AUDIT
+        .map(createHeuristicCard)
+        .join("");
+
+}
+
+function createHeuristicCard(item) {
+
+    return `
+        <article class="cs-heuristic">
+
+            <div class="cs-score">
+                ${item.score}
+            </div>
+
+            <div class="cs-heuristic-content">
+
+                <div class="cs-heuristic-heading">
+
+                    <h4 class="cs-heuristic-title">
+                        ${item.title}
+                    </h4>
+
+                    <span class="cs-badge cs-badge-${item.type}">
+                        ${item.severity}
+                    </span>
+
+                </div>
+
+                <p class="cs-heuristic-description">
+                    ${item.description}
+                </p>
+
+            </div>
+
+        </article>
+    `;
+
+}
+
+export function renderResearchFindings() {
+
+    const container = document.getElementById("research-findings");
+
+    if (!container) return;
+
+    container.innerHTML = RESEARCH_FINDINGS
+        .map(createResearchFinding)
+        .join("");
+
+}
+
+function createResearchFinding(item) {
+
+    return `
+        <article class="cs-finding-chip">
+
+            <div class="cs-finding-icon">
+                ${createIcon(item.icon)}
+            </div>
+
+            <span>
+                ${item.title}
+            </span>
+
+        </article>
+    `;
+
+}
 
 // Helpers
 function createIcon(icon) {

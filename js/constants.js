@@ -406,8 +406,86 @@ export const ICONS = {
             <path d="M12 8h.01"></path>
 
         </svg>
-    `
+    `,
+  grid: `
+    <svg
+        width="19"
+        height="19"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round">
 
+        <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+        <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+        <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+        <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+
+    </svg>
+  `,
+
+  book: `
+    <svg
+        width="19"
+        height="19"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round">
+
+        <path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 0-2 2z"></path>
+        <path d="M8 7h6"></path>
+        <path d="M8 11h8"></path>
+        <path d="M8 15h5"></path>
+
+    </svg>
+  `,
+
+  share: `
+    <svg
+        width="19"
+        height="19"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round">
+
+        <circle cx="18" cy="5" r="2"></circle>
+        <circle cx="6" cy="12" r="2"></circle>
+        <circle cx="18" cy="19" r="2"></circle>
+
+        <path d="M8 12L16 6"></path>
+        <path d="M8 12L16 18"></path>
+
+    </svg>
+  `,
+  target: `
+    <svg
+        width="19"
+        height="19"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round">
+
+        <circle cx="12" cy="12" r="8"></circle>
+        <circle cx="12" cy="12" r="4"></circle>
+
+        <path d="M12 2v3"></path>
+        <path d="M12 19v3"></path>
+        <path d="M2 12h3"></path>
+        <path d="M19 12h3"></path>
+
+    </svg>
+  `
 };
 
 // Problem Section
@@ -466,6 +544,48 @@ export const ROLE_SKILLS = [
   "Prototyping",
   "Frontend"
 
+];
+
+// Research Section
+export const RESEARCH_SUMMARY = [
+  {
+    value: "10",
+    label: "Heuristics evaluated",
+    icon: "document"
+  },
+  {
+    value: "5",
+    label: "Key issues identified",
+    icon: "warning"
+  },
+  {
+    value: "1",
+    label: "Redesign focus",
+    icon: "target"
+  }
+];
+
+export const RESEARCH_FINDINGS = [
+  {
+    title: "3-app onboarding maze",
+    icon: "flow"
+  },
+  {
+    title: "No dashboard hierarchy",
+    icon: "grid"
+  },
+  {
+    title: "Medical jargon",
+    icon: "book"
+  },
+  {
+    title: "Broken empty states",
+    icon: "document"
+  },
+  {
+    title: "No official share function",
+    icon: "share"
+  }
 ];
 
 export const HEURISTIC_AUDIT = [
