@@ -81,3 +81,8 @@ body {
     background: var(--primary);
     color: var(--white);
 }
+
+body.menu-open #scrollTop{
+    opacity:0;
+    pointer-events:none;
+}

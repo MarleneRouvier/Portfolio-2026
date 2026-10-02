@@ -46,7 +46,6 @@
     <link rel="stylesheet" href="css/scroll-to-top.css">
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/soft-skills.css">
-    <link rel="stylesheet" href="css/case-studies/1800medicare.css">
 
     <!-- Iconify -->
     <script src="https://code.iconify.design/iconify-icon/2.2.0/iconify-icon.min.js"></script>
@@ -58,28 +57,28 @@
 
 <body>
 
-    <!-- NAV -->
     <header>
-
-        <!-- Main navigation -->
+        <!-- NAVIGATION -->
         <nav class="navbar" aria-label="Main navigation">
 
             <!-- Logo -->
-            <a href="/" class="nav-logo">
+            <div class="nav-logo">
 
-                <span class="nav-logo-monogram" id="mobile-toggle" aria-label="Open navigation menu" role="button">
+                <!-- Mobile -->
+                <button type="button" class="nav-logo-monogram" id="mobile-toggle" aria-label="Open navigation menu">
 
                     M
                     <span class="nav-logo-divider">|</span>
                     R
 
-                </span>
+                </button>
 
-                <span class="nav-logo-fullname">
+                <!-- Desktop / Tablet -->
+                <a href="/" class="nav-logo-fullname">
                     Marlene Ivon Rouvier
-                </span>
+                </a>
 
-            </a>
+            </div>
 
             <!-- Desktop navigation -->
             <ul class="nav-links">
@@ -104,33 +103,31 @@
 
         </nav>
 
-        <!-- Mobile navigation -->
-        <!--<div class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
 
-            <a href="#work">
-                Projects
-            </a>
+            <nav class="mobile-nav">
 
-            <a href="#about">
-                About Me
-            </a>
+                <a href="#work">Projects</a>
 
-            <a href="#contact">
-                Contact
-            </a>
+                <a href="#about">About Me</a>
 
-            <a href="#contact" class="mobile-cta">
+                <a href="#contact">Contact</a>
 
-                <span class="c-tl"></span>
-                <span class="c-tr"></span>
-                <span class="c-bl"></span>
-                <span class="c-br"></span>
+                <a href="#contact" class="btn btn-primary">
 
-                Let's work together
+                    <span class="c-tl"></span>
+                    <span class="c-tr"></span>
+                    <span class="c-bl"></span>
+                    <span class="c-br"></span>
 
-            </a>
+                    Let's work together
 
-        </div> -->
+                </a>
+
+            </nav>
+
+        </div>
 
     </header>
 

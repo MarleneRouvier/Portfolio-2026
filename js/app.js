@@ -15,6 +15,7 @@ import { renderNextSteps } from "./case-studies/1800medicare.js";
 import { renderResearchSummary } from "./case-studies/1800medicare.js";
 import { renderHeuristicAudit } from "./case-studies/1800medicare.js";
 import { renderResearchFindings } from "./case-studies/1800medicare.js";
+import { initNavigation } from "./navigation.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -24,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderSoftSkills();
   initProcess();
   initSkillsDiagram();
+  initNavigation();
 
   // Medicare Case Study
   renderProjectGlance();
