@@ -129,13 +129,13 @@ HERO SECTION
 }
 
 .badge-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--success);
-  flex-shrink: 0;
-  animation: pulse 2s ease-in-out infinite;
-  box-shadow: 0 0 0 3px rgba(34, 197, 94, .2);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--success);
+    flex-shrink: 0;
+    animation: pulse 2s ease-in-out infinite;
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, .2);
 }
 
 .hero-dev-note {
@@ -246,12 +246,107 @@ HERO SECTION
 }
 
 .badge-text {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--dark);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--dark);
 }
 
 .badge-sub {
-  font-size: 0.7rem;
-  color: var(--warm-gray);
+    font-size: 0.7rem;
+    color: var(--warm-gray);
+}
+
+
+/**********************************************
+HERO MEDIA QUERIES
+**********************************************/
+
+@media (max-width:768px) {
+
+    .hero {
+        height: auto;
+        min-height: auto;
+        max-height: none;
+        display: flex;
+        flex-direction: column;
+        padding: 96px 0 0;
+    }
+
+    .hero-text {
+        padding: 0 1.5rem;
+        justify-content: flex-start;
+        overflow: visible;
+    }
+
+    .hero-eyebrow {
+        margin-bottom: 1.2rem;
+        font-size: .68rem;
+    }
+
+    .hero-name {
+        font-size: clamp(2.3rem, 9vw, 3rem);
+        line-height: .95;
+        letter-spacing: -.04em;
+        max-width: 330px;
+    }
+
+    .hero-tagline {
+        border-left: none;
+        padding-left: 0;
+        margin: 1rem 0;
+        max-width: 330px;
+        font-size: .95rem;
+        line-height: 1.8;
+    }
+
+    .hero-location {
+        margin-bottom: 2rem;
+    }
+
+    .hero-cta {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: .75rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-cta .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-visual {
+        min-height: 300px;
+        overflow: visible;
+        align-items: flex-end;
+    }
+
+    .hero-visual::before {
+        width: 200px;
+        height: 300px;
+        bottom: 0;
+        opacity: .55;
+    }
+
+    .photo-inner img {
+        height: 330px;
+        max-height: none;
+    }
+
+    .hero-badge {
+        left: 50%;
+        bottom: -12px;
+        transform: translateX(-50%);
+        width: min(290px, 92vw);
+        pointer-events: auto;
+    }
+
+    .hero-dev-note {
+        display: none;
+    }
+
+    .photo-frame {
+        width: 80%;
+    }
+
 }
