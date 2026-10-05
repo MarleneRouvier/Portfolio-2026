@@ -2,11 +2,13 @@ export function initNavigation() {
 
     const toggle = document.getElementById("mobile-toggle");
     const menu = document.getElementById("mobile-menu");
-    const nav = menu.querySelector(".mobile-nav");
 
     if (!toggle || !menu) return;
 
-    // Abrir / cerrar
+    const nav = menu.querySelector(".mobile-nav");
+
+    if (!nav) return;
+
     toggle.addEventListener("click", (e) => {
 
         e.preventDefault();
@@ -17,18 +19,12 @@ export function initNavigation() {
 
     });
 
-    // Cerrar al tocar un link
     menu.querySelectorAll("a").forEach(link => {
 
-        link.addEventListener("click", () => {
-
-            closeMenu();
-
-        });
+        link.addEventListener("click", closeMenu);
 
     });
 
-    // Cerrar tocando el fondo
     menu.addEventListener("click", (e) => {
 
         if (!nav.contains(e.target)) {
