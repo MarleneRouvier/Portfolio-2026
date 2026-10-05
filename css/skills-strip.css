@@ -70,13 +70,20 @@ SKILLS STRIP
 
 
 /**********************************************
-SKILLS STRIP MEDIA QUERIES
+MEDIA QUERIES
 **********************************************/
 
 @media (min-width: 1600px) {
+
     .skills-strip-wrapper::before {
         left: -10%;
         width: 120%;
         height: 38px;
+    }
+}
+
+@media (max-width:768px) {
+    .skills-strip-wrapper {
+        padding: 1rem 0;
     }
 }

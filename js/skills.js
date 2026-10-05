@@ -21,8 +21,8 @@ export function initSkillsDiagram() {
     const cx = W / 2;
     const cy = H / 2;
 
-    const R = isMobile ? 120 : 170;
-    const nodeR = isMobile ? 22 : 26;
+    const R = isMobile ? 105 : 170;
+    const nodeR = isMobile ? 18 : 26;
 
     svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
 
@@ -129,8 +129,9 @@ export function initSkillsDiagram() {
         );
 
         const g = document.createElementNS(NS, "g");
+
+        g.setAttribute("transform", `translate(${x}, ${y})`);
         g.style.cursor = "pointer";
-        g.style.transform = `translate(${x}px,${y}px)`;
 
         // ----------------------------
         // Circle
@@ -150,6 +151,7 @@ export function initSkillsDiagram() {
         // ----------------------------
 
         const fo = document.createElementNS(NS, "foreignObject");
+        fo.style.pointerEvents = "none";2
 
         fo.setAttribute("x", "-12");
         fo.setAttribute("y", "-12");
@@ -172,8 +174,9 @@ export function initSkillsDiagram() {
         // Labels
         // ----------------------------
 
-        const labelDistance =
-            Math.abs(Math.abs(skill.angle) - 90) < 20 ? 62 : 58;
+        const labelDistance = isMobile
+            ? 45
+            : (Math.abs(Math.abs(skill.angle) - 90) < 20 ? 62 : 58);
 
         const lx = labelDistance * Math.cos(rad);
         const ly = labelDistance * Math.sin(rad);
@@ -187,24 +190,27 @@ export function initSkillsDiagram() {
 
         const title = el("text", {
             x: lx,
-            y: ly - 10,
+            y: ly - (isMobile ? 5 : 10),
             "text-anchor": anchor,
-            "font-size": "20",
+            "font-size": isMobile ? "14" : "20",
             fill: "#1C1A2E",
             "font-weight": "600",
         });
 
+        title.style.pointerEvents = "none";
         title.textContent = skill.name;
 
         g.appendChild(title);
 
         const subtitle = el("text", {
             x: lx,
-            y: ly + 17,
+            y: ly + (isMobile ? 10 : 17),
             "text-anchor": anchor,
-            "font-size": "17",
+            "font-size": isMobile ? "12" : "17",
             fill: "#5F5E5A",
         });
+
+        subtitle.style.pointerEvents = "none";
 
         subtitle.textContent = skill.subtitle;
 

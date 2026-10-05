@@ -10,15 +10,33 @@ export function renderSoftSkills() {
         .map(createSoftSkill)
         .join("");
 
-    grid.querySelectorAll(".soft-skills-card").forEach(card => {
+    const cards = [...grid.querySelectorAll(".soft-skills-card")];
 
-        card.addEventListener("click", () => {
+    if (window.matchMedia("(hover: none) and (pointer: coarse)").matches) {
 
-            card.classList.toggle("active");
+        cards.forEach(card => {
+
+            card.addEventListener("click", e => {
+
+                e.stopPropagation();
+
+                const wasActive = card.classList.contains("active");
+
+                cards.forEach(c => c.classList.remove("active"));
+
+                if (!wasActive) {
+                    card.classList.add("active");
+                }
+
+            });
 
         });
+        
+        document.addEventListener("click", () => {
+            cards.forEach(c => c.classList.remove("active"));
+        });
 
-    });
+    }
 
 }
 
