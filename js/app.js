@@ -5,17 +5,20 @@ import { renderProjectCards } from "./project-cards.js";
 import { initProcess } from "./process.js";
 import { renderSoftSkills } from "./soft-skills.js";
 import { initSkillsDiagram } from "./skills.js";
-import { renderProjectGlance } from "./case-studies/1800medicare.js";
-import { renderPainPoints } from "./case-studies/1800medicare.js";
-import { renderPersona } from "./case-studies/1800medicare.js";
-import { renderJourneyMap } from "./case-studies/1800medicare.js";
-import { renderDesignDecisions } from "./case-studies/1800medicare.js";
-import { renderLearnings } from "./case-studies/1800medicare.js";
-import { renderNextSteps } from "./case-studies/1800medicare.js";
-import { renderResearchSummary } from "./case-studies/1800medicare.js";
-import { renderHeuristicAudit } from "./case-studies/1800medicare.js";
-import { renderResearchFindings } from "./case-studies/1800medicare.js";
 import { initNavigation } from "./navigation.js";
+import {
+  renderProjectGlance,
+  renderPainPoints,
+  renderPersona,
+  renderJourneyMap,
+  renderDesignDecisions,
+  renderLearnings,
+  renderNextSteps,
+  renderResearchSummary,
+  renderHeuristicAudit,
+  renderResearchFindings,
+  renderFinalDesign
+} from "./case-studies/1800medicare.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -38,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderResearchSummary();
   renderHeuristicAudit();
   renderResearchFindings();
+  renderFinalDesign();
 
   // Scroll to top
   const scrollBtn = document.getElementById("scrollTop");

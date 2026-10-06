@@ -1,6 +1,4 @@
-/* ==========================================================
-   NAV SECTION
-========================================================== */
+/* NAV SECTION */
 
 .navbar {
     position: sticky;
@@ -35,9 +33,7 @@
     color: var(--primary-dark);
 }
 
-/* ==========================================================
-   HERO SECTION
-========================================================== */
+/* HERO SECTION */
 
 .cs-hero {
     padding: 1rem 5vw 2rem;
@@ -291,26 +287,7 @@
     margin-top: 1.5rem;
 }
 
-@media (max-width: 992px) {
-
-    .cs-hero-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .cs-hero-right {
-        min-height: 360px;
-        justify-content: flex-start;
-    }
-
-    .cs-icons-wrap {
-        right: 0;
-    }
-
-}
-
-/*==================================================
-PROJECT AT A GLANCE
-==================================================*/
+/* PROJECT AT A GLANCE */
 
 .cs-glance {
     padding: 1.25rem 5vw;
@@ -383,21 +360,7 @@ PROJECT AT A GLANCE
     font-weight: 300;
 }
 
-@media (max-width: 992px) {
-
-    .cs-glance-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .cs-glance-items {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-/* ==========================================================
-   THE PROBLEM
-========================================================== */
+/* THE PROBLEM */
 
 .cs-content {
     padding: 2rem 5vw;
@@ -589,31 +552,7 @@ PROJECT AT A GLANCE
     color: var(--dark);
 }
 
-/* RESPONSIVE */
-
-@media (max-width: 900px) {
-    .cs-problem-wrap {
-        grid-template-columns: 1fr;
-    }
-
-    .cs-problem-left {
-        position: static;
-    }
-
-    .cs-pain-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .cs-persona-layout {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-}
-
-/* ==========================================================
-   RESEARCH
-========================================================== */
+/* RESEARCH */
 
 .cs-research-header {
     display: grid;
@@ -835,29 +774,7 @@ PROJECT AT A GLANCE
     color: var(--primary);
 }
 
-/* RESPONSIVE */
-
-@media (max-width: 900px) {
-
-    .cs-research-header,
-    .cs-research-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .cs-research-summary {
-        grid-template-columns: 1fr;
-    }
-
-    .cs-research-findings {
-        padding-left: 0;
-        border-left: none;
-    }
-
-}
-
-/* ==========================================================
-   MY ROLE
-========================================================== */
+/* MY ROLE */
 
 .cs-role {
     display: grid;
@@ -927,15 +844,7 @@ PROJECT AT A GLANCE
     }
 }
 
-
-
-
-
-
-
-/* ==========================================================
-   JOURNEY MAP
-========================================================== */
+/* JOURNEY MAP */
 
 .cs-section {
     padding: 3rem 5vw;
@@ -946,7 +855,7 @@ PROJECT AT A GLANCE
     color: var(--text-muted);
     line-height: 1.85;
     font-weight: 300;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .cs-section p strong {
@@ -1037,9 +946,7 @@ PROJECT AT A GLANCE
     line-height: 1.4;
 }
 
-/* ==========================================================
-   DESIGN DECISIONS
-========================================================== */
+/* DESIGN DECISIONS */
 
 .cs-section-design {
     background-color: var(--sage-light);
@@ -1150,9 +1057,146 @@ PROJECT AT A GLANCE
     font-weight: 600;
 }
 
-/* ==========================================================
-   LEARNINGS AND OUTCOMES
-========================================================== */
+/* FINAL DESIGN */
+
+.cs-final-design {
+    padding: 4rem 5vw;
+}
+
+.fd-intro {
+    max-width: 760px;
+    margin-bottom: 3rem;
+}
+
+.fd-title {
+    font-family: var(--serif);
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    line-height: 1.15;
+    margin-bottom: .75rem;
+}
+
+.fd-subtitle {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+}
+
+.fd-desktop {
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+}
+
+.fd-card {
+    flex: 1;
+    max-width: 190px;
+    text-align: center;
+    opacity: .9;
+    transition: opacity .3s ease;
+}
+
+.fd-card:hover {
+    opacity: 1;
+}
+
+.fd-phone {
+    position: relative;
+    padding: 3px;
+    background: #1d1d1f;
+    border: 1px solid #111;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, .18),
+        inset 0 0 0 1px rgba(255, 255, 255, .05);
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+.fd-phone::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75px;
+    height: 15px;
+    background: #000;
+    border-radius: 999px;
+    z-index: 2;
+}
+
+.fd-phone:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, .22);
+}
+
+.fd-phone img {
+    display: block;
+    width: 100%;
+    border-radius: 27px;
+}
+
+.fd-card h4 {
+    margin: 1.25rem 0 .4rem;
+    font-family: var(--serif);
+    font-size: 1.1rem;
+}
+
+.fd-card p {
+    font-size: .82rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+.fd-mobile {
+    display: none;
+}
+
+.fd-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.fd-controls button {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: var(--primary);
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* DESIGN SYSTEM */
+
+.cs-section-design-system {
+    background-color: var(--sage-light);
+}
+
+.cs-design-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+
+.cs-design-grid img {
+    width: 100%;
+    display: block;
+    border-radius: 16px;
+    transition: transform .3s ease;
+}
+
+.cs-design-grid img:hover {
+    transform: translateY(-4px);
+}
+
+/* LEARNINGS AND OUTCOMES */
 
 .cs-learning-list {
     display: flex;
@@ -1216,9 +1260,7 @@ PROJECT AT A GLANCE
     display: block;
 }
 
-/* ==========================================================
-   WHATS NEXT
-========================================================== */
+/* WHATS NEXT */
 
 .cs-next-tags {
     display: flex;
@@ -1255,9 +1297,7 @@ PROJECT AT A GLANCE
     border-top: 1px solid var(--border);
 }
 
-/********************************
-FOOTER
-**********************************/
+/* FOOTER */
 
 .footer-back {
     color: var(--white);
@@ -1276,18 +1316,78 @@ FOOTER
 MEDIA QUERIES
 **********************************/
 
+@media (max-width: 992px) {
+
+    .cs-hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cs-hero-right {
+        min-height: 360px;
+        justify-content: flex-start;
+    }
+
+    .cs-icons-wrap {
+        right: 0;
+    }
+
+    .cs-glance-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cs-glance-items {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .cs-research-header,
+    .cs-research-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cs-research-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .cs-research-findings {
+        padding-left: 0;
+        border-left: none;
+    }
+
+    .cs-problem-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .cs-problem-left {
+        position: static;
+    }
+
+    .cs-pain-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cs-persona-layout {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+}
+
 @media(max-width:768px) {
 
     .cs-problem-left {
 
-    .cs-section-title {
-        padding-top: 1rem;
+        .cs-section-title {
+            padding-top: 1rem;
+        }
     }
-}
 
-.cs-section {
-    padding: 2rem 5vw;
-}
+    .cs-section {
+        padding: 2rem 5vw;
+    }
 
     .cs-title {
         overflow-wrap: break-word;
@@ -1360,98 +1460,137 @@ MEDIA QUERIES
         top: 45px;
     }
 
-     .cs-icons-wrap{
-        width:100%;
-        height:auto;
-        margin:2rem 0 0;
-        display:flex;
-        flex-direction:column;
-        gap:1.5rem;
+    .cs-icons-wrap {
+        width: 100%;
+        height: auto;
+        margin: 2rem 0 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
     }
 
-    .cs-connector-svg{
-        display:none;
+    .cs-connector-svg {
+        display: none;
     }
 
-    .cs-icon-item{
-        position:static;
-        transform:none;
-        max-width:none;
+    .cs-icon-item {
+        position: static;
+        transform: none;
+        max-width: none;
     }
 
-    .cs-glance{
-        flex-direction:column;
-        gap:1.5rem;
-        align-items:flex-start;
+    .cs-glance {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
         padding: 1rem 5vw 2rem;
     }
 
-    .cs-glance-label br{
-        display:none;
+    .cs-glance-label br {
+        display: none;
     }
 
-    .cs-glance-label{
-        border-right:none;
-        border-bottom:1px solid rgba(107,143,113,.25);
-        padding-right:0;
-        padding-bottom:1rem;
-        width:100%;
-        white-space:normal;
+    .cs-glance-label {
+        border-right: none;
+        border-bottom: 1px solid rgba(107, 143, 113, .25);
+        padding-right: 0;
+        padding-bottom: 1rem;
+        width: 100%;
+        white-space: normal;
     }
 
-    .cs-glance-items{
-        padding-left:0;
-        width:100%;
+    .cs-glance-items {
+        padding-left: 0;
+        width: 100%;
 
-        display:grid;
-        grid-template-columns:1fr;
-        gap:1.25rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
     }
 
-    .cs-glance-item{
-        padding:0;
+    .cs-glance-item {
+        padding: 0;
     }
 
-    .cs-pain-grid{
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        gap:1.25rem;
+    .cs-pain-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem;
     }
 
-     .cs-problem-card{
-        padding:1.25rem;
-        overflow:hidden;
+    .cs-problem-card {
+        padding: 1.25rem;
+        overflow: hidden;
     }
 
-    .cs-persona-quote{
-    font-size:.9rem;
-}
-
-.cs-research-findings {
-    min-height: 460px;
-}
-
-.cs-role-reflection {
-    margin-top: 1rem;
-    padding: 1rem;
-}
-
-
-
-
-.cs-journey-chart{
-        display:none;
+    .cs-persona-quote {
+        font-size: .9rem;
     }
 
-    .cs-journey-grid{
-        grid-template-columns:1fr;
-        gap:1rem;
-        margin-top:1.5rem;
+    .cs-research-findings {
+        min-height: 460px;
     }
 
-    .cs-journey-card{
-        text-align:left;
-        padding:1rem;
+    .cs-role-reflection {
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+    .cs-journey-chart {
+        display: none;
+    }
+
+    .cs-journey-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .cs-journey-card {
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .fd-desktop {
+        display: none;
+    }
+
+    .fd-mobile .fd-card {
+        max-width: 200px;
+        margin: auto;
+    }
+
+    .fd-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .75rem;
+    }
+
+    #fd-mobile-card {
+        flex: 1;
+        max-width: 300px;
+    }
+
+    .fd-arrow {
+        width: 42px;
+        height: 42px;
+        border: none;
+        border-radius: 50%;
+        background: var(--primary);
+        color: #fff;
+        cursor: pointer;
+        flex-shrink: 0;
+        transition: .2s;
+    }
+
+    .fd-arrow:hover {
+        transform: scale(1.08);
+    }
+
+     .cs-design-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
     }
 
 }

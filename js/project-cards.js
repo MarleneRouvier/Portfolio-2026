@@ -135,7 +135,7 @@ function createArgentoThumbnail() {
 
                         <img
                             class="argento-image"
-                            src="assets/images/rincon-argento-profile.png"
+                            src="assets/images/case-studies/RinconArgento/rinconArgentoProfile.png"
                             alt="El Rincón Argento website">
 
                     </div>
@@ -173,7 +173,7 @@ function createMedicareThumbnail() {
                     <div class="phone-screen">
 
                         <img
-                            src="assets/images/1800-medicare-onboarding-mobile.png"
+                            src="assets/images/case-studies/1800Medicare/1800MedicareOnboardingMobile.png"
                             alt="Onboarding">
 
                     </div>
@@ -185,7 +185,7 @@ function createMedicareThumbnail() {
                     <div class="phone-screen">
 
                         <img
-                            src="assets/images/1800-medicare-home-mobile.png"
+                            src="assets/images/case-studies/1800Medicare/1800MedicareHomeMobile.png"
                             alt="Home">
 
                     </div>
@@ -214,7 +214,7 @@ function createWeddingThumbnail() {
 
                     <img
                         class="tablet-image"
-                        src="assets/images/angela-harold-home.png"
+                        src="assets/images/case-studies/A&HWedding/angelaAndHaroldHome.png"
                         alt="Angela and Harold website">
 
                 </div>

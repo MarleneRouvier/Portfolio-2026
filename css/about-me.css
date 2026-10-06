@@ -7,7 +7,7 @@ ABOUT ME SECTION
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
     padding: 2rem 5vw;
-    background: var(--cream);
+    background: var(--blush-background);
 }
 
 .about-intro {
@@ -115,45 +115,45 @@ ABOUT ME SECTION
 MEDIA QUERIES - ABOUT ME 
 **********************************/
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-.about-strip{
-    grid-template-columns:1fr;
-    gap:3rem;
-    padding:4rem 1.5rem;
-}
+    .about-strip {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 4rem 1.5rem;
+    }
 
-.skills-col-divider{
-    padding-left:0;
-}
+    .skills-col-divider {
+        padding-left: 0;
+    }
 
-.skills-col-divider::before{
-    display:none;
-}
+    .skills-col-divider::before {
+        display: none;
+    }
 
-.skills-col-divider{
-    border-top:1px solid rgba(139,74,60,.15);
-    padding-top:3rem;
-}
+    .skills-col-divider {
+        border-top: 1px solid rgba(139, 74, 60, .15);
+        padding-top: 3rem;
+    }
 
-.about-title{
-    font-size:2.2rem;
-    max-width:320px;
-}
+    .about-title {
+        font-size: 2.2rem;
+        max-width: 320px;
+    }
 
-.about-body p{
-    text-align:left;
-    line-height:1.85;
-    font-size:1rem;
-}
+    .about-body p {
+        text-align: left;
+        line-height: 1.85;
+        font-size: 1rem;
+    }
 
-.about-signature{
-    margin-top:2rem;
-}
+    .about-signature {
+        margin-top: 2rem;
+    }
 
-.about-signature span{
-    width:8rem;
-}
+    .about-signature span {
+        width: 8rem;
+    }
 
 
 

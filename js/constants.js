@@ -23,34 +23,6 @@ export const SKILLS_STRIP = [
 // Projects Cards List
 export const PROJECTS = [
   {
-    id: "argento",
-    title: "Bringing Argentine bakery culture to Sydney",
-    description:
-      "Designed a bilingual bakery website for local customers.",
-
-    tags: [
-      "UX Strategy",
-      "Brand Storytelling",
-      "Responsive Design",
-      "Front-end Development"
-    ],
-
-    buttons: [
-      /*{
-        label: "View case study",
-        href: "case-study-argento.html",
-        style: "primary"
-      },*/
-      {
-        label: "Visit live site",
-        href: "https://www.elrinconargento.com",
-        target: "_blank",
-        style: "ghost"
-      }
-    ]
-  },
-
-  {
     id: "medicare",
 
     title: "Redesigning the 1800MEDICARE App",
@@ -66,7 +38,7 @@ export const PROJECTS = [
 
     buttons: [
       {
-        label: "View Case Study",
+        label: "View case study",
         href: "case-study-1800medicare.html",
         style: "primary"
       }
@@ -76,10 +48,10 @@ export const PROJECTS = [
   {
     id: "wedding",
 
-    title: "Designed a memorable wedding experience",
+    title: "Designing a memorable wedding experience",
 
     description:
-      "Designed a custom wedding website focused on storytelling, guest information and a seamless RSVP experience across every device.",
+      "Designing a custom wedding website focused on storytelling, guest information and a seamless RSVP experience across every device.",
 
     tags: [
       "UI Design",
@@ -97,6 +69,34 @@ export const PROJECTS = [
       {
         label: "Visit live site",
         href: "https://www.angelaandharold.com",
+        target: "_blank",
+        style: "ghost"
+      }
+    ]
+  },
+
+  {
+    id: "argento",
+    title: "Bringing Argentine bakery culture to Sydney",
+    description:
+      "Designing a bilingual bakery website for local customers.",
+
+    tags: [
+      "UX Strategy",
+      "Brand Storytelling",
+      "Responsive Design",
+      "Front-end Development"
+    ],
+
+    buttons: [
+      /*{
+        label: "View case study",
+        href: "case-study-argento.html",
+        style: "primary"
+      },*/
+      {
+        label: "Visit live site",
+        href: "https://www.elrinconargento.com",
         target: "_blank",
         style: "ghost"
       }
@@ -776,4 +776,53 @@ export const NEXT_STEPS = [
   "Notification system design",
   "Design system documentation",
   "Developer handoff in Figma"
+];
+
+export const FINAL_DESIGN = [
+
+    {
+        id: "onboarding",
+        label: "01",
+        image: "assets/images/case-studies/1800Medicare/1800MedicareOnboardingMobile.png",
+        title: "Onboarding",
+        description:
+            "Simple and supportive account setting."
+    },
+
+    {
+        id: "dashboard",
+        label: "02",
+        image: "assets/images/case-studies/1800Medicare/1800MedicareHomeMobile.png",
+        title: "Dashboard",
+        description:
+            "Personalised overview and quick access."
+    },
+
+    {
+        id: "records",
+        label: "03",
+        image: "assets/images/case-studies/1800Medicare/1800MedicareRecordsOverview.png",
+        title: "Records",
+        description:
+            "All health information in one place."
+    },
+
+    {
+        id: "vaccinations",
+        label: "04",
+        image: "assets/images/case-studies/1800Medicare/1800MedicareVaccinationsList.png",
+        title: "Vaccinations",
+        description:
+            "Clear history with filter and search."
+    },
+
+    {
+        id: "empty-state",
+        label: "05",
+        image: "assets/images/case-studies/1800Medicare/1800MedicareNoResultsMobile.png",
+        title: "Empty state",
+        description:
+            "Helpful guidance when there are no results."
+    }
+
 ];

@@ -9,6 +9,7 @@ import {
     NEXT_STEPS,
     HEURISTIC_AUDIT,
     RESEARCH_FINDINGS,
+    FINAL_DESIGN,
     RESEARCH_SUMMARY,
 } from "../constants.js";
 
@@ -428,6 +429,86 @@ function createResearchFinding(item) {
             </span>
 
         </article>
+    `;
+
+}
+
+// Final Design Section
+let current = 0;
+
+export function renderFinalDesign() {
+
+    const desktop = document.getElementById("fd-desktop");
+    const mobile = document.getElementById("fd-mobile-card");
+    const prev = document.getElementById("fd-prev");
+    const next = document.getElementById("fd-next");
+
+    if (!desktop || !mobile) return;
+
+    // Desktop
+    desktop.innerHTML = FINAL_DESIGN.map(createFinalCard).join("");
+
+    // Mobile
+    renderMobileCard(mobile);
+
+    prev?.addEventListener("click", () => {
+
+        current--;
+
+        if (current < 0) {
+
+            current = FINAL_DESIGN.length - 1;
+
+        }
+
+        renderMobileCard(mobile);
+
+    });
+
+    next?.addEventListener("click", () => {
+
+        current++;
+
+        if (current >= FINAL_DESIGN.length) {
+
+            current = 0;
+
+        }
+
+        renderMobileCard(mobile);
+
+    });
+
+}
+
+function renderMobileCard(container) {
+
+    const screen = FINAL_DESIGN[current];
+
+    container.innerHTML = createFinalCard(screen);
+
+}
+
+function createFinalCard(screen) {
+
+    return `
+
+    <div class="fd-card">
+
+        <div class="fd-phone">
+
+            <img
+                src="${screen.image}"
+                alt="${screen.label}">
+
+        </div>
+
+        <h4>${screen.label} · ${screen.title}</h4>
+
+        <p>${screen.description}</p>
+
+    </div>
+
     `;
 
 }

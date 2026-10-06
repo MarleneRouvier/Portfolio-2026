@@ -3,7 +3,7 @@
 ========================================================== */
 
 .skills-diagram-section {
-  background: var(--blush-background);
+  background: var(--cream);
   padding: 0;
   overflow: hidden;
 }
@@ -125,6 +125,10 @@
 
 .skill-hint-icon {
   flex-shrink: 0;
+}
+
+.skill-hint-mobile {
+  display: none;
 }
 
 .skill-active-title {
