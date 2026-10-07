@@ -28,7 +28,7 @@ export const PROJECTS = [
     title: "Redesigning the 1800MEDICARE App",
 
     description:
-      "Reimagined Australia's digital health experience.",
+      "A concept redesign that turns three disconnected apps into one guided experience, with clear records and plain-language health information.",
 
     tags: [
       "UX Research",
@@ -51,7 +51,7 @@ export const PROJECTS = [
     title: "Designing a memorable wedding experience",
 
     description:
-      "Designing a custom wedding website focused on storytelling, guest information and a seamless RSVP experience across every device.",
+      "A custom wedding website that tells the couple's story and makes RSVPs simple for every guest, on any device.",
 
     tags: [
       "UI Design",
@@ -79,7 +79,7 @@ export const PROJECTS = [
     id: "argento",
     title: "Bringing Argentine bakery culture to Sydney",
     description:
-      "Designing a bilingual bakery website for local customers.",
+      "A bilingual website that introduces Argentine baking to Sydney locals and helps the Latin community find and order their favourites.",
 
     tags: [
       "UX Strategy",

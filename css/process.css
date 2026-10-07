@@ -33,9 +33,8 @@ PROCESS SECTION
 }
 
 .process-tab {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
+    padding: 0.6rem;
+    border-radius: 15px;
     border: 1.5px solid rgba(139, 74, 60, 0.3);
     background: transparent;
     color: var(--primary);
@@ -53,7 +52,7 @@ PROCESS SECTION
 
 #processTabs {
     display: flex;
-    gap: .75rem;
+    gap: 1.2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -76,15 +75,45 @@ PROCESS SECTION
 }
 
 .process-flow-title {
-    font-size: 0.92rem;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--dark);
     margin-bottom: 0.4rem;
 }
 
 .process-flow-desc {
-    font-size: 0.78rem;
+    font-size: 0.9rem;
     color: var(--text-muted);
     line-height: 1.55;
     font-weight: 300;
+}
+
+/****************************************
+MEDIA QUERIES
+****************************************/
+
+@media (max-width: 768px) {
+
+    #processTabs {
+        display: block;
+        gap: .75rem;
+        margin-bottom: 1rem;
+    }
+
+    .process-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .process-tab {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        scroll-snap-align: start;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+    }
+
+    .process-flow-icon {
+        display: none;
+    }
+
 }

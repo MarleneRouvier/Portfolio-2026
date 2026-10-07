@@ -135,6 +135,7 @@ WORK SECTION - HEADER
     word-spacing: normal;
     letter-spacing: normal;
     margin-bottom: .8rem;
+    font-variant-numeric: lining-nums;
 }
 
 .project-desc {
